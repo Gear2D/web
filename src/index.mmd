@@ -1,0 +1,30 @@
+Welcome!
+========
+
+Welcome to Gear2D home.
+
+Gear2D is a component-based game engine. I created it because I felt that the current engines out there didn't cared much about code reuse and software architecture. I also hate coupling. Everytime I have to write `gameObject.GetComponent<Colllider>()` my brain twists with the feeling that there's something wrong. I don't want to know `Collider` internals, I don't want to know its methods. Actually I couldn't care less which component is actually calculating collisions as long as they *are* being calculated. I do care that my component gets notified of those collisions, though.
+
+You see, one of the biggest wins when using components is decoupled code, so that you create something once and use it whenever needed. When you are forced to know specifics about a component (including its public methods) to communicate with it you are **coupling** your code with it. That means you'll have to deal with a dependency chain that we all hate and worse: your code only works if that *specific* component is there, forcing the users of *your* component to deal with that dependency chain too. What if they don't want to use the `Collider` that you are using? What if they implemented their own?
+
+Coupling in that way happens because components do need to talk to each other. Obviously the `RigidBody` component needs to talk with the `Transform` component to properly simulate its physics, but, that doesn't mean this communication happens by a highly-coupled method call.
+
+Enter Gear2D
+------------
+
+Component-based systems fits very well game development: if you think of component as an entity behaviour, you can add and remove behaviours by picking components you want to be present in that entity. This is already wonderful in compile-time but, by having your components decoupled, you can switch them in runtime effectively changing their behaviour. Glue everything together with a declarative way of defining your entities and you have Gear2D.
+
+Gear2D components need not to know specifics of each other to communicate. They share a table of parameters, reading and writing to it on the go. For example, Gear2D's `collider` component reports the entity collision with another object by using the `"collision"` parameter, and you can listen to it so you get notified when there's a collision. If someone writes a better collider component, if it also reports collisions by the `"collision"` parameter, you can just replace the old with the new. No code change there.
+
+tl;dr
+----
+
+Gear2D is a component-based game engine featuring:
+
+* Data-driven entity and scene definition.
+* Component loading only if necessary.
+* Component replacing at runtime.
+* Open-Source (MIT License).
+* Cross-platform code
+* Android support.
+* A really nice smiley-gear-with-blood logo, courtesy of [ShadowStarry](http://loneally.deviantart.com/art/Clockwork-Avatar-196763477)

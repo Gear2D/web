@@ -1,0 +1,47 @@
+@import url(../font/nu/stylesheet.css);
+@import url(../font/lime/stylesheet.css);
+
+html {
+  height: 100%;
+}
+
+body {
+  text-align: center;
+  font-family: 'limemedium';
+  font-size: 11px;
+  background-image: url('../stripes.png');
+  background-repeat: repeat;
+  background-position: center center;
+  padding: 0;
+  margin: 0;    
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#under-construction {
+  background-image: url('../under-construction.gif');
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 100%;
+  margin: auto;
+  padding: 0;
+}
+
+#go-to-doc {
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover, a:visited {
+  text-decoration: none;
+  color: #c61717;
+}
+
+h1 {
+  font-style: none;
+}

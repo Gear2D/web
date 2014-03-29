@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Gear2D Game Engine" />
+    <link rel="shortcut icon" href="gear2d_1.0.png" />
+    <link rel="stylesheet" href="css/gear2d-style.css" />
+    <link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/tomorrow.min.css">
+    <script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>    
+    <title>Gear2D Game Engine</title>
+  </head>
+  <body>
+    <header>
+    </header>
+    <nav>
+      <ul>
+        <li><a href='index.html'>Home</a></li>
+        <li><a href='underconstruction.html'>Screenshots</a></li>
+        <li><a href='underconstruction.html'>Downloads</a></li>
+        <li><a href='underconstruction.html'>License</a></li>
+        <li><a href='contact.html'>Contact</a></li>
+        <li><a href='underconstruction.html'>Documentation</a></li>
+      </ul>
+    </nav>
+    <main>
+    __CONTENT_PLACEHOLDER__
+    </main>
+  </body>
+</html>
