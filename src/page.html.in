@@ -13,14 +13,7 @@
     <header>
     </header>
     <nav>
-      <ul>
-        <li><a href='index.html'>Home</a></li>
-        <li><a href='underconstruction.html'>Screenshots</a></li>
-        <li><a href='underconstruction.html'>Downloads</a></li>
-        <li><a href='underconstruction.html'>License</a></li>
-        <li><a href='contact.html'>Contact</a></li>
-        <li><a href='underconstruction.html'>Documentation</a></li>
-      </ul>
+    __PAGE_INDEX_PLACEHOLDER__
     </nav>
     <main>
     __CONTENT_PLACEHOLDER__
